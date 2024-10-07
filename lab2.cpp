@@ -54,7 +54,6 @@ int main(void)
     double time_spent = (double)(end - start) / CLOCKS_PER_SEC;
     printf("%f", time_spent);
 
-    // Освобождение динамически выделенной памяти
     for (i = 0; i < n; i++) {
         free(a[i]);
         free(b[i]);
